@@ -2,10 +2,19 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
+use App\Http\Services\Metrics;
 class HomeController
 {
-    public function index()
+	protected $metric;
+	public function __construct()
     {
-        return view('admin.home');
+        $this->metric = new Metrics();
+    }
+    public function index()
+    {	
+    	$weather = $this->metric->getWeather();
+    	$categories = Category::all();
+        return view('admin.home',compact('categories','weather'));
     }
 }

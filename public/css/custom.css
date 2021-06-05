@@ -106,3 +106,53 @@ table.dataTable thead .sorting_desc {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+footer {
+    height:50px;
+    padding:5px 40px;
+    background-color: rgba(0,0,0,.8);
+    color:#fff;
+    display:flex;
+    align-items: center
+}
+.sidebar-lg-show footer {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}
+
+
+.sidebar-minimized footer {
+    margin-left: 50px;
+
+    width: calc(100% - 50px);
+}
+
+.report-container {
+    border: #E0E0E0 1px solid;
+    padding: 20px 40px 40px 40px;
+    border-radius: 2px;
+    margin: 0 auto;
+    color: #929292;
+    background-color:#fff;
+}
+
+.weather-icon {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.weather-forecast {
+    color: #212121;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+span.min-temperature {
+    margin-left: 15px;
+    color: #929292;
+}
+
+.time {
+    line-height: 25px;
+}
